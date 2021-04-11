@@ -1,0 +1,35 @@
+<!-- Friend -->
+<div class="card mb-6">
+    <div class="card-body">
+
+        <div class="media">
+            @@if (status == "Online") {
+            <div class="avatar avatar-online mr-5">
+                <img class="avatar-img" src="@@photo" alt="@@name">
+            </div>
+            }
+            @@if (status != "Online") {
+            <div class="avatar mr-5">
+                <img class="avatar-img" src="@@photo" alt="@@name">
+            </div>
+            }
+
+            <div class="media-body align-self-center mr-6">
+                <h6 class="mb-0">@@name</h6>
+                <small class="text-muted">@@status</small>
+            </div>
+
+            <div class="align-self-center ml-auto">
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" id="id-user-@@id" type="checkbox">
+                    <label class="custom-control-label" for="id-user-@@id"></label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Label -->
+    <label class="stretched-label" for="id-user-@@id"></label>
+</div>
+<!-- Friend -->

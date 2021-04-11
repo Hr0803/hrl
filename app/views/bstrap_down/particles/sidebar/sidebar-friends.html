@@ -1,0 +1,86 @@
+<div class="d-flex flex-column h-100">
+
+    <div class="hide-scrollbar">
+        <div class="container-fluid py-6">
+
+            <!-- Title -->
+            <h2 class="font-bold mb-6">Friends</h2>
+            <!-- Title -->
+
+            <!-- Search -->
+            @@include("sidebar-search.html")
+            <!-- Search -->
+
+            <!-- Button -->
+            <button type="button" class="btn btn-lg btn-block btn-secondary d-flex align-items-center mb-6" data-toggle="modal" data-target="#invite-friends">
+                Invite friends
+                <i class="fe-users ml-auto"></i>
+            </button>
+
+            <!-- Friends -->
+            <nav class="mb-n6">
+
+                <div class="mb-6">
+                    <small class="text-uppercase">A</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Anna Bridges", "photo": "assets/images/avatars/10.jpg", "status": "Online", "url": "chat-2.html" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">B</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Brian Dawson", "photo": "assets/images/avatars/6.jpg", "status": "last seen 2 hours ago", "url": "#" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">L</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Leslie Sutton", "photo": "assets/images/avatars/5.jpg", "status": "last seen 3 days ago", "url": "#" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">M</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Matthew Wiggins", "photo": "assets/images/avatars/4.jpg", "status": "last seen 3 days ago", "url": "#" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">S</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Simon Hensley", "photo": "assets/images/avatars/7.jpg", "status": "last seen 3 days ago", "url": "#" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">W</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "William Wright", "photo": "assets/images/avatars/9.jpg", "status": "last seen 3 days ago", "url": "#" },
+                    { "name": "William Greer", "photo": "assets/images/avatars/3.jpg", "status": "last seen 10 minutes ago", "url": "#" }
+                ])
+
+                <div class="mb-6">
+                    <small class="text-uppercase">Z</small>
+                </div>
+
+                @@loop("../components/friend.html", [
+                    { "name": "Zane Mayes", "photo": "assets/images/avatars/7.jpg", "status": "last seen 3 days ago", "url": "#" }
+                ])
+
+            </nav>
+            <!-- Friends -->
+
+        </div>
+    </div>
+
+</div>

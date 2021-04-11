@@ -1,0 +1,93 @@
+<div class="d-flex flex-column h-100">
+
+    <div class="hide-scrollbar">
+        <div class="container-fluid py-6">
+
+            <!-- Title -->
+            <h2 class="font-bold mb-6">Chats</h2>
+            <!-- Title -->
+
+            <!-- Search -->
+            @@include("sidebar-search.html")
+            <!-- Search -->
+
+            <!-- Favourites -->
+            <div class="text-center hide-scrollbar d-flex my-7" data-horizontal-scroll="">
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm avatar-online mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/2.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">William</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm avatar-online mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/3.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Simon</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm avatar-online mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/4.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Thomas</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm avatar-online mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/5.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Zane</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/6.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Thomas</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/7.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">William</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/8.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Simon</div>
+                </a>
+
+                <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                    <div class="avatar avatar-sm mb-3">
+                        <img class="avatar-img" src="assets/images/avatars/9.jpg" alt="Image Description">
+                    </div>
+                    <div class="small">Thomas</div>
+                </a>
+            </div>
+            <!-- Favourites -->
+
+            <!-- Chats -->
+            <nav class="nav d-block list-discussions-js mb-n6">
+                @@loop("../components/chat-link.html", [
+                    { "name": "Bootstrap Themes", "text": "Anna Bridges: Hey, Maher! How are you? The weather is great isn't it?", "photo": "assets/images/avatars/11.jpg", "time": "10:42 am", "status": false, "badge": 3, "url": "chat-1.html" },
+                    { "name": "Anna Bridges", "text": "is typing<span class='typing-dots'><span>.</span><span>.</span><span>.</span></span>", "photo": "assets/images/avatars/10.jpg", "time": "10:42 am", "status": "Online", "badge": "", "url": "chat-2.html" },
+                    { "name": "Simon Hensley", "text": "I’m sorry, this question would be out of my expertise.", "photo": "assets/images/avatars/7.jpg", "time": "10:38 am", "status": true, "badge": "", "url": "#" },
+                    { "name": "William Wright", "text": "Hello! Let me transfer you to the marketing department.", "photo": "assets/images/avatars/9.jpg", "time": "10:20 am", "status": false, "badge": "", "url": "#" },
+                    { "name": "Leslie Sutton", "text": "<h6 class='d-inline'>You:</h6> I’m sorry, I don’t have the information on that.", "photo": "assets/images/avatars/5.jpg", "time": "09:55 am", "status": true, "badge": "", "url": "#" },
+                    { "name": "Matthew Wiggins", "text": "Matthew, let me transfer you to the marketing department.", "photo": "assets/images/avatars/4.jpg", "time": "09:25 am", "status": false, "badge": "", "url": "#" },
+                    { "name": "Thomas Walker", "text": "I am really sorry to hear that. Is there anything I can do to help you?", "photo": "assets/images/avatars/3.jpg", "time": "09:00 am", "status": false, "badge": "", "url": "#" },
+                    { "name": "Zane Mayes", "text": "That is a good question, let me find out for you.", "photo": "assets/images/avatars/2.jpg", "time": "08:05 am", "status": false, "badge": "", "url": "#" },
+                    { "name": "Brian Dawson", "text": "I’m not sure, but let me find out for you.", "photo": "assets/images/avatars/6.jpg", "time": "08:00 am", "status": false, "badge": "", "url": "#" }
+                ])
+            </nav>
+            <!-- Chats -->
+
+        </div>
+    </div>
+
+</div>

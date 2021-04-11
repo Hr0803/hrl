@@ -1,0 +1,14 @@
+// switches
+//
+// Tweak a few things for switches
+
+.custom-switch {
+
+    .custom-control-label {
+
+        &::after {
+            background-color: darken($custom-control-indicator-bg, 7.5%);
+        }
+    }
+
+}

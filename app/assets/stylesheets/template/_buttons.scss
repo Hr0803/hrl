@@ -1,0 +1,84 @@
+//
+// Button
+//
+
+.btn {
+    letter-spacing: rem(.45px);
+}
+
+//
+// Icon Button
+//
+
+.btn-ico {
+    position: relative;
+    padding: 0;
+
+    > i,
+    > svg,
+    > span {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: rem(19px);
+        left: 50%;
+        top: 50%;
+    }
+
+    > svg {
+        @include theme_size(rem(21px));
+    }
+}
+
+//
+// Icon Button Sizes
+//
+
+.btn-ico {
+    height: calc(#{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-height-border});
+    width: calc(#{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-height-border});
+
+    &.btn-sm {
+        height: calc(#{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-height-border});
+        width: calc(#{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-height-border});
+
+        i, span {
+            font-size: rem(17px);
+        }
+
+        svg {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &.btn-lg {
+        height: ($input-btn-padding-y-lg * 2 + $line-height-base) + rem($input-height-border);
+        width: ($input-btn-padding-y-lg * 2 + $line-height-base) + rem($input-height-border);
+    }
+
+    .input-group-append > &,
+    .input-group-prepend > & {
+        height: auto !important;
+    }
+}
+
+//
+// Minimal buttons
+//
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color}.btn-minimal {
+        color: rgba(color-yiq($value), 0.35);
+        fill: rgba(color-yiq($value), 0.35);
+
+        &:hover,
+        &:focus, &.focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            border-color: $value;
+            background: $value;
+            color: rgba(color-yiq($value), 0.5);
+            fill: rgba(color-yiq($value), 0.5);
+        }
+    }
+}

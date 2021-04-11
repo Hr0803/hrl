@@ -1,0 +1,35 @@
+<!-- Chat link -->
+<a class="text-reset nav-link p-0 mb-6" href="@@url">
+    <div class="card card-active-listener">
+        <div class="card-body">
+
+            <div class="media">
+                @@if (status == "Online") {
+                <div class="avatar avatar-online mr-5">
+                    <img class="avatar-img" src="@@photo" alt="@@name">
+                </div>
+                }
+                @@if (status != "Online") {
+                <div class="avatar mr-5">
+                    <img class="avatar-img" src="@@photo" alt="@@name">
+                </div>
+                }
+                <div class="media-body overflow-hidden">
+                    <div class="d-flex align-items-center mb-1">
+                        <h6 class="text-truncate mb-0 mr-auto">@@name</h6>
+                        <p class="small text-muted text-nowrap ml-4">@@time</p>
+                    </div>
+                    <div class="text-truncate">@@text</div>
+                </div>
+            </div>
+
+        </div>
+
+        @@if (badge != "") {
+        <div class="badge badge-circle badge-primary badge-border-light badge-top-right">
+            <span>@@badge</span>
+        </div>
+        }
+    </div>
+</a>
+<!-- Chat link -->

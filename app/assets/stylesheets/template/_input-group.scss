@@ -1,0 +1,12 @@
+
+.input-group-append {
+    margin-left: -$input-border-width * 2;
+}
+
+.input-group-prepend {
+    margin-right: -$input-border-width * 2;
+
+    + .form-control {
+        padding-left: $input-border-width;
+    }
+}

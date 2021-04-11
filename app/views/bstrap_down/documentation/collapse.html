@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    @@include("particles/head/head.html")
+    <!-- Head -->
+
+    <body class="" data-spy="scroll" data-target="#docs-sub-navigation" data-offset="200">
+
+        @@include("particles/navigation/navigation.html")
+
+        <section class="" style="padding-top: 77px;">
+            <div class="container-fluid">
+
+                <div class="row align-items-top">
+
+                    <!-- Sidebar -->
+                    @@include("particles/sidebar/sidebar.html")
+
+                    <!-- Content -->
+                    <div class="col-lg-8 offset-lg-2 py-10 px-lg-10">
+                        <h1 class="font-normal mb-2">Collapse</h1>
+                        <p class="lead">Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
+                        <p class="lead"><a href="https://getbootstrap.com/docs/4.3/components/collapse/" target="_blank">Bootstrap documentation →</a></p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Examples</h3>
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Link with href
+                                </a>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Button with data-target
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <p>
+                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Link with href
+                                        </a>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            Button with data-target
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </div>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Accordion example</h3>
+                        <p>Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code class="highlighter-rouge">.accordion</code> as a wrapper.</p>
+
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <div class="accordion" id="accordionExample">
+                                <!-- Card -->
+                                <div class="card mb-6">
+                                    <div class="card-header position-relative">
+                                        <a href="#" class="text-reset d-block stretched-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true">
+                                            <div class="row no-gutters align-items-center">
+                                                <!-- Title -->
+                                                <div class="col">
+                                                    <h5>Title</h5>
+                                                    <p>Subtitle</p>
+                                                </div>
+                                                <!-- Icon -->
+                                                <div class="col-auto">
+                                                    <i class="text-muted icon-md fe-user"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+
+                                <!-- Card -->
+                                <div class="card mb-6">
+                                    <div class="card-header position-relative">
+                                        <a href="#" class="text-reset d-block stretched-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo" aria-expanded="true">
+                                            <div class="row no-gutters align-items-center">
+                                                <!-- Title -->
+                                                <div class="col">
+                                                    <h5>Title</h5>
+                                                    <p>Subtitle</p>
+                                                </div>
+                                                <!-- Icon -->
+                                                <div class="col-auto">
+                                                    <i class="text-muted icon-md fe-clock"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <div class="accordion" id="accordionExample">
+                                        <!-- Card -->
+                                        <div class="card mb-6">
+                                            <div class="card-header position-relative">
+                                                <a href="#" class="text-reset d-block stretched-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne" aria-expanded="true">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <!-- Title -->
+                                                        <div class="col">
+                                                            <h5>Title</h5>
+                                                            <p>Subtitle</p>
+                                                        </div>
+                                                        <!-- Icon -->
+                                                        <div class="col-auto">
+                                                            <i class="text-muted icon-md fe-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card -->
+
+                                        <!-- Card -->
+                                        <div class="card mb-6">
+                                            <div class="card-header position-relative">
+                                                <a href="#" class="text-reset d-block stretched-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo" aria-expanded="true">
+                                                    <div class="row no-gutters align-items-center">
+                                                        <!-- Title -->
+                                                        <div class="col">
+                                                            <h5>Title</h5>
+                                                            <p>Subtitle</p>
+                                                        </div>
+                                                        <!-- Icon -->
+                                                        <div class="col-auto">
+                                                            <i class="text-muted icon-md fe-clock"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card -->
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
+
+                    </div><!-- .col-lg-10 -->
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-2 border-left my-8 py-4" style="position: fixed; right: 0;">
+                        <nav id="docs-sub-navigation" class="nav flex-column mb-0">
+                            <h6 class="nav-link py-2">Jump to:</h6>
+                        </nav>
+                    </div><!-- .col-lg-2 -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        @@include("particles/script/script.html")
+        <!-- Scripts -->
+
+    </body>
+</html>

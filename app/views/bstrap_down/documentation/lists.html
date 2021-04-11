@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    @@include("particles/head/head.html")
+    <!-- Head -->
+
+    <body class="" data-spy="scroll" data-target="#docs-sub-navigation" data-offset="200">
+
+        @@include("particles/navigation/navigation.html")
+
+        <section class="" style="padding-top: 77px;">
+            <div class="container-fluid">
+
+                <div class="row align-items-top">
+
+                    <!-- Sidebar -->
+                    @@include("particles/sidebar/sidebar.html")
+
+                    <!-- Content -->
+                    <div class="col-lg-8 offset-lg-2 py-10 px-lg-10">
+                        <h1 class="font-normal mb-2">List group</h1>
+                        <p class="lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+                        <p class="lead"><a href="https://getbootstrap.com/docs/4.3/components/list-group/" target="_blank">Bootstrap documentation →</a></p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Examples</h3>
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item disabled">Porta ac consectetur ac</li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Morbi leo risus
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <ul class="list-group">
+                                        <li class="list-group-item active">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item disabled">Porta ac consectetur ac</li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus
+                                            <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Members</h3>
+                        <p>Combination of the default Bootstrap list group and media component.</p>
+
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item py-6">
+                                    <div class="media align-items-center">
+                                        <div class="avatar avatar-sm avatar-online mr-5">
+                                            <img class="avatar-img" src="../assets/images/avatars/10.jpg" alt="Anna Bridges">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="mb-0"><a href="#" class="text-reset">Anna Bridges</a></h6>
+                                            <small class="text-muted">Online</small>
+                                        </div>
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Promote <span class="ml-auto fe-trending-up"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Restrict <span class="ml-auto fe-trending-down"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-user-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-6">
+                                    <div class="media align-items-center">
+                                        <div class="avatar avatar-sm mr-5">
+                                            <img class="avatar-img" src="../assets/images/avatars/9.jpg" alt="Simon Hensley">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="mb-0"><a href="#" class="text-reset">Simon Hensley</a></h6>
+                                            <small class="text-muted">last seen 7 hours ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Promote <span class="ml-auto fe-trending-up"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Restrict <span class="ml-auto fe-trending-down"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-user-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <ul class="list-group list-group-flush">
+                                        <!-- Member -->
+                                        <li class="list-group-item py-6">
+
+                                            <div class="media align-items-center">
+                                                <div class="avatar avatar-sm avatar-online mr-5">
+                                                    <img class="avatar-img" src="../assets/images/avatars/10.jpg" alt="Anna Bridges">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0"><a href="#" class="text-reset">Anna Bridges</a></h6>
+                                                    <small class="text-muted">Online</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-5">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fe-more-vertical"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Promote <span class="ml-auto fe-trending-up"></span>
+                                                            </a>
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Restrict <span class="ml-auto fe-trending-down"></span>
+                                                            </a>
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Delete <span class="ml-auto fe-user-x"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!-- Member -->
+                                        <li class="list-group-item py-6">
+                                            <div class="media align-items-center">
+                                                <div class="avatar avatar-sm mr-5">
+                                                    <img class="avatar-img" src="../assets/images/avatars/9.jpg" alt="Simon Hensley">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-0"><a href="#" class="text-reset">Simon Hensley</a></h6>
+                                                    <small class="text-muted">last seen 7 hours ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-5">
+                                                    <div class="dropdown">
+                                                        <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fe-more-vertical"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Promote <span class="ml-auto fe-trending-up"></span>
+                                                            </a>
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Restrict <span class="ml-auto fe-trending-down"></span>
+                                                            </a>
+                                                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                                                Delete <span class="ml-auto fe-user-x"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </script>
+                            </code>
+                        </pre>
+
+                    </div><!-- .col-lg-10 -->
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-2 border-left my-8 py-4" style="position: fixed; right: 0;">
+                        <nav id="docs-sub-navigation" class="nav flex-column mb-0">
+                            <h6 class="nav-link py-2">Jump to:</h6>
+                        </nav>
+                    </div><!-- .col-lg-2 -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        @@include("particles/script/script.html")
+        <!-- Scripts -->
+
+    </body>
+</html>

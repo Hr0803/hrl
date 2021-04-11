@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    @@include("particles/head/head.html")
+    <!-- Head -->
+
+    <body class="" data-spy="scroll" data-target="#docs-sub-navigation" data-offset="200">
+
+        @@include("particles/navigation/navigation.html")
+
+        <section class="" style="padding-top: 77px;">
+            <div class="container-fluid">
+
+                <div class="row align-items-top">
+
+                    <!-- Sidebar -->
+                    @@include("particles/sidebar/sidebar.html")
+
+                    <!-- Content -->
+                    <div class="col-lg-8 offset-lg-2 py-10 px-lg-10">
+                        <h1 class="font-normal mb-2">Introduction</h1>
+                        <p class="lead">Learn how to use template using NPM scripts to build your chat, compile SCSS, change brand-colors and more.</p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Installing Node.js</h3>
+                        <p>If you do not have Node installed already, you can get it by downloading the package installer from Node's website. You need to have Node.js installed onto your computer before you can install Gulp. <a href="#">Download and install Node.js →</a></p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Installing Gulp</h3>
+                        <p>Download Gulp Command Line Interface to be able to use <b class="text-basic-inverse">gulp</b> in your terminal.</p>
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    npm install gulp-cli -g
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Installing NPM modules</h3>
+                        <p>Open your command line to the root directory of your unzipped theme and run to install all of theme's dependencies.</p>
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    npm install
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Run Gulp</h3>
+                        <p>Template employs Browsersync to serve pages from the dist directory. Running gulp will compile the theme, copy all required files to the dist directory and will open a browser window to dist/index.html. Now you can try making some changes to assets/include/scss/template.scss and save it.</p>
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    gulp
+                                </script>
+                            </code>
+                        </pre>
+                        <p><span class="font-medium text-basic-inverse">Important:</span> Be aware that this replaces existing "dist" files, so proceed with caution.</p>
+                        <p>Hit Ctrl+C or just close the command line window to stop the server.</p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">HTML includes</h3>
+                        <p>
+                            The <a href="https://www.npmjs.com/package/gulp-file-include" target="_blank">gulp-file-include</a> package is used to make global changes in HTML files easier. The following partials are available:
+                        </p>
+                        <ul class="text-gray-700">
+                            <li>
+                                <code>head.html</code>
+                                <ul>
+                                    <li>
+                                        <code>@@theme (string)</code> - Parameter for switching between auto, dark and light themes. Can be either "auto", "dark",  or "light"
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>
+                            Easily create new <code>.html</code> partials inside the <code>/partials</code> folder and point to them from any file by specifying the path to the partial file and using the <code>@@include</code> keyword.
+                        </p>
+                        <p>
+                            Please read the <a href="https://www.npmjs.com/package/gulp-file-include" target="_blank">official package documentation</a> for more info.
+                        </p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Customizing SCSS</h3>
+                        <p>There are 2 basic ways to customize your theme:</p>
+                        <ol>
+                            <li>
+                                <strong>Customizing SCSS.</strong> This is more versatile and sustainable way to customize the template, but requires the <code>gulp</code> compilation steps outlined above. The 2 major benefits of this strategy are using variable overrides to easily customize theme styles, plus you never have to touch Bootstrap or template's source, meaning future updates will be much, much, simpler. There are 3 provided files that make this strategy simple to implement:
+                                <ul>
+                                    <li>
+                                        <code>user-variables.scss</code> or <code>user-variables.dark.scss</code>: This files can be used to override Bootstrap core and the template variables for customizing elements that have been tied to variables.
+                                    </li>
+                                    <li>
+                                        <code>user.scss</code>: This file can be used for writing custom SCSS that will be compiled alongside Bootstrap and template's core files.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Compiled CSS.</strong> If you plan on using the template "as is", or only need limited customization, feel free to simply attach the compiled <code>template.css</code>, <code>template.dark.css</code> or <code>template.min.css</code>, <code>template.dark.min.css</code> file in the <code>dist/assets/css</code> directory.
+                            </li>
+                        </ol>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Themes</h3>
+                        <p>You can use Messenger with <code>auto</code>, <code>dark</code> or <code>light</code> mode. By default we use <code>auto</code> mode.</p>
+
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <!-- Head -->
+                                    ...include("particles/head/head.html", { "theme": "auto" })
+                                    <!-- Head -->
+                                </script>
+                            </code>
+                        </pre>
+
+                        <h5 class="font-normal">Dark only:</h5>
+
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <!-- Head -->
+                                    ...include("particles/head/head.html", { "theme": "dark" })
+                                    <!-- Head -->
+                                </script>
+                            </code>
+                        </pre>
+
+                        <h5 class="font-normal">Light only:</h5>
+
+                        <pre class="bg-light py-6 my-5">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <!-- Head -->
+                                    ...include("particles/head/head.html", { "theme": "light" })
+                                    <!-- Head -->
+                                </script>
+                            </code>
+                        </pre>
+                        <p><span class="font-medium text-basic-inverse">Important:</span> Use "@@" instead of "..."</p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Support</h3>
+                        <p>We provide support and guidance for this product. Please feel free to email here: web-master72[at]yandex.com</p>
+
+                    </div><!-- .col-lg-10 -->
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-2 border-left my-8 py-4" style="position: fixed; right: 0;">
+                        <nav id="docs-sub-navigation" class="nav flex-column mb-0">
+                            <h6 class="nav-link py-2">Jump to:</h6>
+                        </nav>
+                    </div><!-- .col-lg-2 -->
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Scripts -->
+        @@include("particles/script/script.html")
+        <!-- Scripts -->
+    </body>
+</html>

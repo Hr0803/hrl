@@ -1,0 +1,32 @@
+<!-- Member -->
+<li class="list-group-item py-6">
+    <div class="media align-items-center">
+
+        @@if (status == "Online") {
+        <div class="avatar avatar-sm avatar-online mr-5">
+            <img class="avatar-img" src="@@photo" alt="@@name">
+        </div>
+        }
+        @@if (status != "Online") {
+        <div class="avatar avatar-sm mr-5">
+            <img class="avatar-img" src="@@photo" alt="@@name">
+        </div>
+        }
+        <div class="media-body">
+            <h6 class="mb-0">@@name</h6>
+            <small class="text-muted">@@status</small>
+        </div>
+
+        <div class="align-self-center ml-auto">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="id-add-user-@@id" type="checkbox">
+                <label class="custom-control-label" for="id-add-user-@@id"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Label -->
+    <label class="stretched-label" for="id-add-user-@@id"></label>
+</li>
+<!-- Member -->

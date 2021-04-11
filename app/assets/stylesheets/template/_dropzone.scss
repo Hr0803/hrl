@@ -1,0 +1,23 @@
+.dropzone-image-preview {
+    display: none;
+}
+
+.dz-image-preview {
+
+    .dropzone-file-preview {
+        display: none;
+    }
+
+    .dropzone-image-preview {
+        display: block;
+    }
+}
+
+.chat-content + .chat-files {
+    border-top: 1px solid $border-color;
+    margin-bottom: -1px;
+}
+
+.dropzone-previews-js:empty {
+    display: none;
+}

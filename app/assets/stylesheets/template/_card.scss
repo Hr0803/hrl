@@ -1,0 +1,63 @@
+//
+// Card
+//
+
+.card-title {
+    margin-bottom: $card-spacer-y / 2;
+}
+
+.card-body {
+    padding: $card-spacer-y $card-spacer-x;
+}
+
+//
+// Accordion
+//
+
+.accordion {
+
+    > .card {
+
+        &:not(:first-of-type) {
+
+            &:not(:last-of-type) {
+                @include border-radius($card-border-radius);
+            }
+        }
+
+        &:first-of-type {
+            border-bottom: $card-border-width solid $card-border-color;
+            @include border-bottom-radius($card-border-radius);
+        }
+
+        &:last-of-type {
+            @include border-top-radius($card-border-radius);
+        }
+
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .card-active-listener {
+
+        &::before {
+            background: theme-color("primary");
+            position: absolute;
+            content: "";
+            height: 0px;
+            width: 2px;
+            top: 50%;
+            left: -($card-border-width);
+            transform: translateY(-50%);
+            transition: $transition-base;
+            @include border-right-radius(1px);
+
+            .active > & {
+                height: 20px
+            }
+        }
+
+    }
+
+}

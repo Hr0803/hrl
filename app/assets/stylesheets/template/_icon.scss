@@ -1,0 +1,49 @@
+//
+// Icon
+//
+
+.icon-shape {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: rem(18px);
+    min-width: rem(44px);
+    @include theme_size(rem(44px));
+
+    > i,
+    > span {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+}
+
+//
+// Icon Shape Variant
+//
+
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+        .icon-shape {
+            background: darken($value, 5%);
+            color: color-yiq($value);
+        }
+   }
+}
+
+//
+// Icon Font Sizes
+//
+
+.icon-sm {
+    font-size: rem(17px) !important;
+}
+
+.icon-md {
+    font-size: rem(19px) !important;
+}
+
+.icon-lg {
+    font-size: rem(23px) !important;
+}

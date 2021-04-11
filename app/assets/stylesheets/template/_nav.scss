@@ -1,0 +1,26 @@
+.nav-tabs {
+    background: theme-color("secondary");
+    border-radius: $nav-tabs-border-radius;
+    padding: $nav-link-padding-y / 2;
+
+    .nav-link {
+        @include border-bottom-radius($nav-tabs-border-radius);
+
+        &:not(.active) {
+            color: inherit;
+
+            &:hover {
+                color: theme-color('basic-inverse');
+            }
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+}
+
+.modified-accordion [data-toggle="collapse"] {
+    cursor: default;
+}

@@ -1,0 +1,14 @@
+.close {
+    opacity: .3;
+
+    &:not(:disabled):not(.disabled) {
+        @include hover-focus {
+            opacity: .5;
+        }
+    }
+}
+
+.close:focus,
+.close:hover {
+    outline: 0;
+}

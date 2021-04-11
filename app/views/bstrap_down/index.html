@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    @@include("particles/head/head.html", { "theme": "auto" })
+    <!-- Head -->
+
+    <body>
+
+        <div class="layout">
+
+            <!-- Navbar -->
+            @@include("particles/navigation/navigation.html")
+            <!-- Navbar -->
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="tab-content h-100" role="tablist">
+                    <div class="tab-pane fade h-100" id="tab-content-create-chat" role="tabpanel">
+                        @@include("particles/sidebar/sidebar-create.html")
+                    </div>
+
+                    <div class="tab-pane fade h-100" id="tab-content-friends" role="tabpanel">
+                        @@include("particles/sidebar/sidebar-friends.html")
+                    </div>
+
+                    <div class="tab-pane fade h-100 show active" id="tab-content-dialogs" role="tabpanel">
+                        @@include("particles/sidebar/sidebar-dialogs.html")
+                    </div>
+
+                    <div class="tab-pane fade h-100" id="tab-content-demos" role="tabpanel">
+                        @@include("particles/sidebar/sidebar-demos.html")
+                    </div>
+
+                    <div class="tab-pane fade h-100" id="tab-content-user" role="tabpanel">
+                        @@include("particles/sidebar/sidebar-user.html")
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+
+            <!-- Main Content -->
+            <div class="main" data-mobile-height="">
+
+                <!-- Default Page -->
+                <div class="chat flex-column justify-content-center text-center">
+                    <div class="container-xxl">
+
+                        <div class="avatar avatar-lg mb-5">
+                            <img class="avatar-img" src="assets/images/avatars/12.jpg" alt="">
+                        </div>
+
+                        <h6>Hey, Matthew!</h6>
+                        <p>Please select a chat to start messaging.</p>
+                    </div>
+                </div>
+                <!-- Default Page -->
+
+            </div>
+            <!-- Main Content -->
+
+        </div>
+        <!-- Layout -->
+
+        <!-- DropzoneJS: Template -->
+        @@include("particles/dropzone/dropzone-template.html")
+        <!-- DropzoneJS: Template -->
+
+        <!-- Modal: Invite friends -->
+        @@include("particles/modal/invite.html")
+        <!-- Modal: Invite friends -->
+
+        <!-- Scripts -->
+        @@include("particles/script/script.html")
+        <!-- Scripts -->
+
+    </body>
+</html>

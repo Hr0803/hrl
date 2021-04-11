@@ -1,0 +1,43 @@
+<!-- Friend -->
+<div class="card mb-6">
+    <div class="card-body">
+
+        <div class="media">
+            @@if (status == "Online") {
+            <div class="avatar avatar-online mr-5">
+                <img class="avatar-img" src="@@photo" alt="@@name">
+            </div>
+            }
+            @@if (status != "Online") {
+            <div class="avatar mr-5">
+                <img class="avatar-img" src="@@photo" alt="@@name">
+            </div>
+            }
+            <div class="media-body align-self-center">
+                <h6 class="mb-0">@@name</h6>
+                <small class="text-muted">@@status</small>
+            </div>
+
+            <div class="align-self-center ml-5">
+                <div class="dropdown z-index-max">
+                    <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            New chat <span class="ml-auto fe-edit-2"></span>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            Delete <span class="ml-auto fe-trash-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link -->
+        <a href="@@url" class="stretched-link"></a>
+
+    </div>
+</div>
+<!-- Friend -->

@@ -1,0 +1,48 @@
+// Template Functions
+//
+//
+
+// Px to rem
+//
+//
+
+@function rem($pixels, $context: 16) { // Assumes the browser default, typically `16px`
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
+}
+
+
+// Simple Sass Mixin for Width and Height
+//
+//
+
+@mixin theme_size($width, $height: $width) {
+    height: $height;
+    min-height: $height;
+    width: $width;
+    min-width: $width;
+}
+
+// Remove the unit of a length
+// _badge.scss
+//
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
+
+// Convert an RGBA color to its RGB look-alike
+//
+//
+
+@function rgba-to-rgb($rgba, $background: #fff) {
+    @return mix(rgb(red($rgba), green($rgba), blue($rgba)), $background, alpha($rgba) * 100%);
+}

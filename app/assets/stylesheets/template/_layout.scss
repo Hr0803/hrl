@@ -1,0 +1,159 @@
+html, body, .layout {
+    height: 100%;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    border-top: 1px solid $border-color;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+    order: 2;
+    min-height: 61px;
+}
+
+.sidebar,
+.navigation,
+.chat-content,
+.chat-sidebar {
+    @include hide-scrollbar();
+}
+
+.main,
+.chat-sidebar {
+    height: 100vh;
+    height: 100%;
+}
+
+.main,
+.navigation,
+.chat-sidebar {
+    background: $body-bg;
+}
+
+.sidebar {
+    background: theme-color("light");
+    flex-grow: 2;
+    order: 1;
+}
+
+.main {
+    overflow: hidden;
+    order: 3;
+    flex: 1;
+
+    .chat-body {
+        display: flex;
+        flex-grow: 1;
+        flex-flow: column;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .chat-content {
+        flex: 2;
+    }
+}
+
+//
+// Chat info
+//
+
+.chat {
+    display: flex;
+    height: 100%;
+}
+
+.chat-sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 100%;
+    z-index: 3;
+    width: 100%;
+    visibility: hidden;
+    transition: visibility .4s ease, -webkit-transform .4s ease, transform .4s ease;
+
+    &.chat-sidebar-visible {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .layout {
+        flex-direction: row;
+    }
+
+    .sidebar, .navigation, .active-users {
+        height: 100vh;
+    }
+
+    .navigation {
+        width: $navigation-width;
+        border-top: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        order: 0;
+    }
+
+    .sidebar {
+        width: $sidebar-width;
+        flex-grow: 0;
+    }
+
+    .main, .chat-sidebar {
+        height: 100vh;
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+
+    .chat-sidebar {
+        position: static;
+        border-left: 1px solid $border-color;
+        visibility: hidden;
+        width: 0;
+        margin-right: -1px;
+
+        &.chat-sidebar-visible {
+            transform: translateX(0);
+            visibility: visible;
+            min-width: $chat-sidebar-width;
+        }
+    }
+
+}
+
+@include media-breakpoint-down(lg) {
+
+    .main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: $zindex-sticky;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: visibility .4s ease, -webkit-transform .4s ease, transform .4s ease;
+        background: $body-bg;
+
+        &.main-visible {
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+}

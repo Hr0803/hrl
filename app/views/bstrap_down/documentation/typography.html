@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    @@include("particles/head/head.html")
+    <!-- Head -->
+
+    <body class="" data-spy="scroll" data-target="#docs-sub-navigation" data-offset="200">
+
+        @@include("particles/navigation/navigation.html")
+
+        <section class="" style="padding-top: 77px;">
+            <div class="container-fluid">
+
+                <div class="row align-items-top">
+
+                    <!-- Sidebar -->
+                    @@include("particles/sidebar/sidebar.html")
+
+                    <!-- Content -->
+                    <div class="col-lg-8 offset-lg-2 py-10 px-lg-10">
+                        <h1 class="font-normal mb-2">Typography</h1>
+                        <p class="lead">Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
+                        <p class="lead"><a  href="https://getbootstrap.com/docs/4.3/content/typography/" target="_blank">Bootstrap documentation →</a></p>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Headings</h3>
+                        <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
+
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <h1>h1. Bootstrap heading</h1>
+                            <h2>h2. Bootstrap heading</h2>
+                            <h3>h3. Bootstrap heading</h3>
+                            <h4>h4. Bootstrap heading</h4>
+                            <h5>h5. Bootstrap heading</h5>
+                            <h6>h6. Bootstrap heading</h6>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <h1>h1. Bootstrap heading</h1>
+                                    <h2>h2. Bootstrap heading</h2>
+                                    <h3>h3. Bootstrap heading</h3>
+                                    <h4>h4. Bootstrap heading</h4>
+                                    <h5>h5. Bootstrap heading</h5>
+                                    <h6>h6. Bootstrap heading</h6>
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Lead</h3>
+                        <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <p class="lead">
+                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                            </p>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                    </p>
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Lists: Unstyled</h3>
+                        <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <ul class="list-unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <ul class="list-unstyled">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </script>
+                            </code>
+                        </pre>
+
+                        <hr class="my-9">
+
+                        <h3 class="font-normal" data-create-link="#">Lists: Inline</h3>
+                        <p>Remove a list’s bullets and apply some light <code>margin</code> with a combination of two classes, <code>.list-inline</code> and <code>.list-inline-item</code>.</p>
+                        <div class="border rounded-top px-6 py-8 mt-7">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">Lorem ipsum</li>
+                                <li class="list-inline-item">Phasellus iaculis</li>
+                                <li class="list-inline-item">Nulla volutpat</li>
+                            </ul>
+                        </div>
+                        <pre class="bg-light rounded-bottom mt-0">
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">Lorem ipsum</li>
+                                        <li class="list-inline-item">Phasellus iaculis</li>
+                                        <li class="list-inline-item">Nulla volutpat</li>
+                                    </ul>
+                                </script>
+                            </code>
+                        </pre>
+
+                    </div><!-- .col-lg-10 -->
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-2 border-left my-8 py-4" style="position: fixed; right: 0;">
+                        <nav id="docs-sub-navigation" class="nav flex-column mb-0">
+                            <h6 class="nav-link py-2">Jump to:</h6>
+                        </nav>
+                    </div><!-- .col-lg-2 -->
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- Scripts -->
+        @@include("particles/script/script.html")
+        <!-- Scripts -->
+    </body>
+</html>
